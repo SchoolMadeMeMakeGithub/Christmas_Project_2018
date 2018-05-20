@@ -56,8 +56,8 @@ func _input(event):
 				draw_Line.add_vertex(to)
 				draw_Line.end()
 				#I'll need this later
-				#if(result.collider.is_in_group("Grid")):
 				
+				#if(result.collider.is_in_group("Grid")):
 				#Create 3D Arrow at click
 				Animated_Cursor.translation = result.position
 				get_tree().get_root().add_child(Animated_Cursor)
@@ -69,7 +69,7 @@ func _input(event):
 				geo.begin(Mesh.PRIMITIVE_LINE_STRIP)
 				
 				
-				selected_champions.number = 0
+				selected_champions.number = 1
 				selected_champions.path_queue = paths
 				
 				for i in paths:
